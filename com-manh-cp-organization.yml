@@ -190,7 +190,7 @@ spec:
           value: "8080"
         # JVM and Spring properties
         - name: JAVA_OPTS
-          value: "-javaagent:/component/workdir/dd-java-agent.jar -Ddd.trace.analytics.enabled=true -Ddd.service.name=Organization -Xmx4096m -Xss512k -Dlogging.level.com.manh.cp=INFO -Dlogging.level.com.netflix=WARN -XX:+UseG1GC -XX:+DisableExplicitGC -XX:+UseStringDeduplication"
+          value: "-javaagent:/component/workdir/dd-java-agent.jar -Ddd.trace.analytics.enabled=true -Ddd.service.name=Organization -Ddd.jmxfetch.enabled=true -Xmx4096m -Xss512k -Dlogging.level.com.manh.cp=INFO -Dlogging.level.com.netflix=WARN -XX:+UseG1GC -XX:+DisableExplicitGC -XX:+UseStringDeduplication"
         # Behavioral properties
         - name: COMPONENT_STEREOTYPE
           value: "REST"
